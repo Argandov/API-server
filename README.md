@@ -7,13 +7,20 @@ For this setup:
 - NodeJS 
 - Express + mariadb -> `npm install express mariadb`
 
-## Communication with mariadb server
+## Communication with mariadb server for local testing
 
 `mysql --host 127.0.0.1 -P 3306 -u root -p`
 (Will prompt for the master password)
 \*Note: change the initial user for mysql. Do not use root
+\* For this repo I added a database 'learning' with 'technologies' as a single column
 
 ## Opening the http server
 
-- 
-- Client: Postman or cURL
+- Setup the database with ./database.js
+- Client: Postman, insomnia or cURL (Script added to this repo)
+- Run with `node index.js`
+
+NOTE: Add nodemon with npm
+
+\* 190621: This only supports GET/POST requests by now.
+\* 190621: We can also use Docker-compose instead of having to install the software sepparatedly
