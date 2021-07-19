@@ -1,11 +1,19 @@
 ## Initial setup
 
-For this setup:
+**LOCALLY:**
+
 - [Mariadb](https://mariadb.com/kb/en/mariadb-package-repository-setup-and-usage/) (locally, so we can communicate through it, with the mariadb server on docker)
-- [Docker / mariadb server](https://hub.docker.com/_/mariadb)
-	docker run -p 3306:3306 --name mariadb_server -e MARIADB_ROOT_PASSWORD=(A password) -d mariadb:latest
 - NodeJS 
-- Express + mariadb -> `npm install express mariadb`
+- Express + mariadb: 
+
+`npm install express mariadb`
+
+**DOCKER:**
+
+- [Docker / mariadb server](https://hub.docker.com/_/mariadb)
+
+`docker run -p 3306:3306 --name mariadb_server -e MARIADB_ROOT_PASSWORD=(A password) -d mariadb:latest`
+
 
 ## Communication with mariadb server for local testing
 
