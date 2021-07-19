@@ -11,8 +11,10 @@ For this setup:
 
 `mysql --host 127.0.0.1 -P 3306 -u root -p`
 (Will prompt for the master password)
-\*Note: change the initial user for mysql. Do not use root
-\* For this repo I added a database 'learning' with 'technologies' as a single column
+
+- \*Note: change the initial user for mysql. Do not use root
+
+- \* For this repo I added a database 'learning' with 'technologies' as a single column
 
 ## Opening the http server
 
